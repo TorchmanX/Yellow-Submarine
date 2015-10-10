@@ -10,34 +10,82 @@ mark, audio, video {
   vertical-align: baseline;
 }
 
+.section div.container-fluid div.row div{
+	/*background-size: 80vw auto !important;*/
+    height: 100vh;
+    width: 100%;
+}
+
+@media all and (max-device-width: 1024px) and (orientation: landscape) {
+     /* 
+     overwrite property for devices with 
+     screen width of 1024px or smaller  
+     */
+     .section div.container-fluid div.row div{
+		/*background-size: 80vw auto !important;*/
+	    height: 100vh;
+	    width: 100%;
+     	background-size: contain !important;
+        background-attachment: scroll !important;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+     }
+}
+
+@media all and (max-device-width: 1024px) and (orientation: portrait) {
+     /* 
+     overwrite property for devices with 
+     screen width of 1024px or smaller  
+     */
+     .section div.container-fluid div.row div{
+		/*background-size: 80vw auto !important;*/
+	    height: 40vh;
+	    width: 100%;
+     	background-size: contain !important;
+        background-attachment: scroll !important;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+     }
+
+    header.header{
+    	padding: 5pt 3% !important;
+    }
+    header.header .navbar-brand {
+		font-size: 12pt !important;
+		line-height: 12pt !important;
+		letter-spacing: 1pt !important;
+	}
+	header.header .navbar-header{
+		max-height: 2vw !important;
+		display: inline-block;
+	}
+}
+
+.section{
+	/*margin-bottom: 10vh;*/
+}
 
 #d1{
-	height: 1200px;
     background:url(Cover.jpg) center top no-repeat fixed;    
 }
 
 #d2{
-	height: 1200px;
-    background:url(Aboutus.jpg) center top no-repeat fixed;
+    background:url(Aboutus.jpg) center center no-repeat fixed;
 }
 
 #d3{
-	height: 1200px;
-	background:url() center top no-repeat fixed;    
+	background:url() center center no-repeat fixed;    
 }
 
 #d4{   
-	height: 1200px;
     background:url(Scenario1.jpg) center center no-repeat fixed;
 }
 
 #d5{
-	height: 1200px;
     background:url(Scenario2.jpg) center center no-repeat fixed;
 }
 
 #d6{
-	height: 1200px;
     background:url(Technique.jpg) center center no-repeat fixed;
 }
 
@@ -89,17 +137,18 @@ a:link, a:visited{
 }
 
 .header{
-	width: 88%;
-	padding: 20px 6%;	
-	font-size: 18px;
-	letter-spacing: 1.5px;
+	width: 100vw;
+	max-height: 5vh;
+	padding: 20pt 3%;	
+	font-size: 14pt;
+	letter-spacing: 1.5pt;
 	text-align: center;
 	font-family: 'NovecentowideLightBold', 'Helvetica', 'Arial', sans-serif;
 	background-color: #CCCCCC;
 	z-index: 999;
 	position: fixed;
 	top: 0;
-	opacity:0.6;
+	opacity:0.8;
 }
 
 	.header a:link, .header a:visited{
@@ -122,12 +171,12 @@ a:link, a:visited{
 			clear: both;
 		}
 
-		header.header #logo-type {
-			font-size: 28px;
-			letter-spacing: 2.5px;
+		header.header .navbar-brand {
+			font-size: 20pt;
+			letter-spacing: 2.5pt;
 			color: #0a0a0a;
 			float: left;
-			line-height: 30px;
+			line-height: 30pt;
 		}
 			
 		header.header nav.nav{
