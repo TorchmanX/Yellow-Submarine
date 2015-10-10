@@ -5,46 +5,81 @@
 	<title>TorchmanX</title>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Dave Shea">
-	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+	<meta name="author" content="TorchmanX">
+	<meta name="description" content="An official site of TorchmanX.">
 	<meta name="robots" content="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="./style.css"/>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<style>
-			@import url("style.css");
-	</style>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		
 
 
 </head>
 <body>
-	
+	<!-- navigation panel -->
 	<header class="header">
-		<h1 id="logo-type"><a href="" target="blank">TorchmanX</a></h1>
-		<nav class="nav">
-			<ul>
-				<li><a href="#d2">About us</a></li>
-				<li><a href="#d3">Product</a></li>
-				<li><a href="#d4">Scenario</a></li>
-				<li><a href="#d6">Technique</a></li>
-			</ul>
-		</nav>
-	</header>	
+	<nav class="navbar navbar-default navbar-fixed-top nav" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#home">TorchmanX</a>
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="navbar-collapse-main">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#about-us">About us</a></li>
+	        <li><a href="#product">Product</a></li>
+	        <li><a href="#scenario">Scenario</a></li>
+	        <li><a href="#technique">Technique</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	</header>
 	
-	<div>
-		<div id="d1">
+	<div id="home">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="d1" class="col-sm-12"></div>
+			</div>
 		</div>
-		<div id="d2">
-		</div>	
-		<div id="d3">
-		</div>
-		<div id="d4">
-		</div>	
-		<div id="d5">
-		</div>	
-		<div id="d6">
-		</div>	
 	</div>
+	<div id="about-us">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="d2" class="col-sm-12"></div>
+			</div>
+		</div>
+	</div>	
+	<div id="product">
+				<div class="container-fluid">
+			<div class="row">
+				<div id="d3" class="col-sm-12"></div>
+			</div>
+		</div>
+	</div>
+	<div id="scenario">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="d4" class="col-sm-12"></div>
+				<div id="d5" class="col-sm-12"></div>
+			</div>
+		</div>
+	</div>	
+	<div id="technique">
+		<div class="container-fluid">
+			<div class="row">
+				<div id="d6" class="col-sm-12"></div>
+			</div>
+		</div>
+	</div>	
 	
 </body>
 </html>
