@@ -51,7 +51,7 @@ mark, audio, video {
     	padding: 5pt 3% !important;
     }
     header.header .navbar-brand {
-		font-size: 12pt !important;
+		font-size: 100% !important;
 		line-height: 12pt !important;
 		letter-spacing: 1pt !important;
 	}
